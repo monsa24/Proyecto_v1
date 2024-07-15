@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package com.proyecto.service;
 
-/**
- *
- * @author valer
- */
+import com.proyecto.domain.Perrito;
+import java.util.List;
+
 public interface PerritoService {
     
+    //se obtiene un listado de categorias en un List
+    public List <Perrito> getPerritos(boolean activos);
+    
+    //Se obtiene una categoria por medio de su ID
+    public Perrito getPerrito(Perrito perrito);
+    
+    //metodo de guardar
+    public void save(Perrito perrito);
+    
+    //Metodo de eliminar
+    public void delete(Perrito perrito);
 }
